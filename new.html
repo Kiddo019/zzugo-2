@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta name="viewport"
+			content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 2007 08:21:57 GMT">
+		<title>郑州大学数据中台2020</title>
+		<link rel="stylesheet" type="text/css" href="./mycss.css">
+		<style>
+			#bak_0 {
+				MARGIN: 0 auto;
+				left: 0;
+				WIDTH: 350px;
+				min-HEIGHT: 540px;
+			}
+		</style>
+
+		<script language="javascript">
+			start = false;
+			var timeID=0;
+			var tt1=600;
+			tt2=0;
+			tt3=0;
+			var timeID=setInterval("hnceTimer()",1000);
+			function hnceTimer(){
+				if(start){
+					tt1--;
+					if (tt1>=0){
+					tt2=tt1 % 60;
+					tt3=(tt1-tt2)/60;
+					document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
+					}else{document.getElementById("tim317").innerHTML="已作废";}
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="bak_0">
+			<div style="WIDTH: 100%; HEIGHT: 102px;background:url(./images/title316b.png);">
+				<div style="width:100%;height:32px;line-height:32px;text-align:right">
+					<a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=s1B91155D19B741238DC1233C96FFD7DC">
+						<span style="color:#00c;">〖切换账号〗</span>
+					</a>　
+				</div>
+			</div>
+			
+			<div style="width:100%;height:7px;BACKGROUND-IMAGE: url(./images/split5.png)"></div>
+			
+			<div style="WIDTH: 100%; HEIGHT: 90px;">
+				<div style="width:100%;height:32%;line-height:32px;text-align:left;">
+					<span style="font-size:12px;color:#333;">
+						获取时间：
+					</span>
+					<span style="font-size:16px;color:#a0a;" id="datetimenow"> 10:00 </span>
+					<span style="font-size:12px;color:#333;">
+						有效期剩余
+					</span>
+					<span id="tim317" style="font-size:22px;color:#c00;font-weight:500;font-family:黑体;">
+						10分00秒
+					</span>
+				</div>
+				
+				<div style="width:100%;height:7px;BACKGROUND-IMAGE: url(./images/split5.png)">
+				</div>
+				
+				<div style="width:100%;min-height:25px;line-height:25px;font-size:18px;color:#00c;font-weight:500;font-family:黑体;">
+					<span style="color:#00a" id="collageAndName">
+						&nbsp;&nbsp;信息工程学院　XXX
+					</span>
+					<br>
+					<span id="door">
+						&nbsp;&nbsp;通行信息：主校区大门北门.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">出口</span>
+					</span>
+					<br>
+					<span id="m_identity">
+						&nbsp;&nbsp;出入身份：请假被批准的学生
+					</span>
+					<img id="qrcode_image" src="./test.jpg" style="width:350px;border:10px solid #C526CE;">
+				</div>
+				
+				<div style="width:100%;height:7px;BACKGROUND-IMAGE: url(./images/split5.png)">
+				</div>
+				<div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">
+					郑州大学疫情防控领导小组、保卫处、信息化办公室
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			document.querySelector("div[id='bak_0']").style.display='none';
+		</script>
+		
+		<div id="bak_1" style="text-align: center;">
+			<h2 style="border: 10px solid transparent;padding: 15px;border-image: url(./images/border.png) 30 round;text-shadow: 2px 2px 3px #000000;">
+				张三の通行码
+			</h2>
+			<form>
+				<div>
+					<label>姓名:</label>
+					<input type="text" name="f_name" placeholder="请输入姓名">
+				</div>
+				<div>
+					<label>院系:</label>
+					<input type="text" name="f_collage" placeholder="eg:信息工程学院">
+				</div>
+				<div>
+					<label>入口:</label>
+					<input type="text" name="f_door" placeholder="eg:主校区大门北门">
+				</div>
+				<div>
+					<label>出入身份: </label>
+					<select>
+						<option value="1">请假被批准的学生</option>
+						<option value="2">研究生</option>
+						<option value="3">郑州大学硕士研究生</option>
+						<option value="4">单独授权</option>
+						<option value="5">法外狂徒</option>
+					</select>
+				</div>
+				<div>
+					<img src="./test.jpg" id="image" width="200"  style="display:flex vertical-align:middle;" >
+				</div>
+				<div>
+					<!-- <input id="input" class="button-3" type="file" onchange="handleFiles()" > -->
+					<label for="file-upload" class="button-4">
+					    选择照片
+					</label>
+					<input id="file-upload" type="file" onchange="handleFiles()">
+				</div>
+				<div>
+					当日返校？
+					<input type="radio" name="back2skuY" value="back2skuY">是
+					<input type="radio" name="back2skuY" value="back2skuN">否
+				</div>
+			</form>
+			<br>
+			<button  class ="button-4"onclick="generate_in()">入校通行码</button>
+			<button class ="button-4" onclick="generate_out()">出校通行码</button>
+			<br>
+			<br>
+			<button class ="button-4" onclick="last_time_in()">和上次一样,入校</button>
+			<button class ="button-4" onclick="last_time_out()">和上次一样,出校</button>
+		</div>
+			
+	</body>
+	
+	<!-- 配置时间 -->
+	<script>
+		let dta = new Date();
+		document.getElementById("datetimenow").innerHTML = (("0"+(dta.getMonth()+1)).slice(-2)) +"月"+(("0"+dta.getDate()).slice(-2)) +"日" +" "+ (("0"+dta.getHours()).slice(-2)) +":"+ (("0"+dta.getMinutes()).slice(-2))+"      ";
+	</script>
+	
+	
+	<!-- 回调函数 -->
+	<script>
+		var img = document.getElementById("image");
+		let showQRCodeEl = document.querySelector("img");
+		var width = 400;
+		function handleFiles() {
+			var filesToUpload = document.getElementById('file-upload').files;
+			var file = filesToUpload[0];
+			let uploadImgSrc = window.URL.createObjectURL(file);
+			showQRCodeEl.src = uploadImgSrc;
+			img.src = uploadImgSrc;
+			
+			const reader = new FileReader();
+			reader.onloadend = () => {
+			    // convert file to base64 String
+			    const base64String = reader.result.replace('data:', '').replace(/^.+,/, '');
+			    // store file
+			    localStorage.setItem('choosenQRcode', base64String);
+			    
+			};
+			reader.readAsDataURL(file);
+		}
+		
+		a=null;
+		b=null;
+		c=null;
+		
+		function generate(){
+			start = true;	//star henceTimer
+			//hide form and show passcode
+			document.querySelector("div[id='bak_1']").style.display='none';
+			document.querySelector("div[id='bak_0']").style.display='block';
+			
+			a = document.querySelector("input[name='f_name']").value;	//value from form
+			b = document.querySelector("input[name='f_collage']").value;
+			c = document.querySelector("input[name='f_door']").value;
+			localStorage.setItem('f_name', a);
+			localStorage.setItem('f_collage', b);
+			localStorage.setItem('f_door', c);
+			if(document.querySelector("[value='back2skuN']").checked){
+				localStorage.setItem('back2skuY', "true");
+				document.querySelector("span[id='tipNoRecord']").style.display="none";
+			}else{
+				localStorage.setItem('back2skuY', "false");
+			}
+			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;"+ b+"　"+a;
+			let m_select = document.querySelector("select");
+			let idx = m_select.selectedIndex;
+			let m_id_text = "　出入身份："+m_select.options[idx].text;
+			localStorage.setItem('identity', m_id_text);
+			let m_identity = document.querySelector("span[id='m_identity']");
+			m_identity.innerHTML = m_id_text;
+		}
+		
+		function generate_in(){
+			generate();
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">.入口</span>';
+		}
+		function generate_out(){
+			generate();
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">.出口</span>';
+			document.getElementById("qrcode_image").style.border="10px solid green"
+		}
+		
+		function localstroageGenerate(){
+			start = true;
+			a = localStorage.getItem('f_name');
+			b = localStorage.getItem('f_collage');
+			c = localStorage.getItem('f_door');
+			var dataImage = localStorage.getItem('choosenQRcode');
+			document.querySelector("span[id='collageAndName']").innerHTML = "&nbsp;&nbsp;"+b+"　"+a;
+			
+			let m_identity = document.querySelector("span[id='m_identity']");
+			m_identity.innerHTML = localStorage.getItem("identity");
+			
+			var dataImage = localStorage.getItem('choosenQRcode');
+			showQRCodeEl.src = "data:image/png;base64," + dataImage;
+			img.src =  "data:image/png;base64," + dataImage;
+			document.querySelector("div[id='bak_1']").style.display='none';
+			document.querySelector("div[id='bak_0']").style.display='block';
+		}
+		
+		function last_time_in(){
+			localstroageGenerate();
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">.入口</span>';
+		}
+		
+		function last_time_out(){
+			localstroageGenerate()
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">.出口</span>';
+			document.getElementById("qrcode_image").style.border="10px solid green"
+		}
+		
+	</script>
+	
+</html>
