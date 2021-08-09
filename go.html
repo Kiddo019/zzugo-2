@@ -145,6 +145,8 @@
 			<br>
 			<button class ="button-4" onclick="last_time_in()">和上次一样,入校</button>
 			<button class ="button-4" onclick="last_time_out()">和上次一样,出校</button>
+			<br>
+			<br>
 		</div>
 			
 	</body>
@@ -212,11 +214,11 @@
 		
 		function generate_in(){
 			generate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">.入口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">入口</span>';
 		}
 		function generate_out(){
 			generate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">.出口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">出口</span>';
 			document.getElementById("qrcode_image").style.border="10px solid green"
 		}
 		
@@ -240,12 +242,12 @@
 		
 		function last_time_in(){
 			localstroageGenerate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">.入口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">入口</span>';
 		}
 		
 		function last_time_out(){
 			localstroageGenerate()
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">.出口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">出口</span>';
 			document.getElementById("qrcode_image").style.border="10px solid green"
 		}
 		
