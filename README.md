@@ -1,7 +1,7 @@
 # ZZU-GO
 ![GitHub](https://img.shields.io/github/license/21wang12/zzugo?style=plastic)
 ## 功能
-一键生成郑州大学通行码
+一键生成郑州大学通行码，轻量，快速，安全。
 
 ## 运行截图
 
@@ -19,6 +19,5 @@
 + 使用运行在客户端的`JavaScript`控制页面，进行信息传递
 + 利用`createObjectURL`传递生成本地图片地址
 + 本项目为了增加安全性，未将任何用户信息上传至服务端，所有人可放心食用
-
 
 
