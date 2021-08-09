@@ -132,11 +132,6 @@
 					</label>
 					<input id="file-upload" type="file" onchange="handleFiles()">
 				</div>
-				<div>
-					当日返校？
-					<input type="radio" name="back2skuY" value="back2skuY">是
-					<input type="radio" name="back2skuY" value="back2skuN">否
-				</div>
 			</form>
 			<br>
 			<button  class ="button-4"onclick="generate_in()">入校通行码</button>
@@ -145,12 +140,11 @@
 			<br>
 			<button class ="button-4" onclick="last_time_in()">和上次一样,入校</button>
 			<button class ="button-4" onclick="last_time_out()">和上次一样,出校</button>
-			<br>
-			<br>
-			<br>
-			<br>
-			contact
-			sw3310@columbia.edu
+			<br><br><br>
+			contact<br>sw3310@columbia.edu
+			<br><br><br>
+			如果您觉得不错，欢迎<a href="./images/money.png" style="color:blue;text-decoration: underline blue;
+">赞赏</a>
 		</div>
 			
 	</body>
@@ -253,7 +247,6 @@
 		function last_time_out(){
 			localstroageGenerate()
 			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">入口</span>';
-			
 			
 		}
 		
