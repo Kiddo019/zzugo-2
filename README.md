@@ -5,11 +5,11 @@
 
 ## 运行截图
 
-![image](https://user-images.githubusercontent.com/38482259/126856831-1b0731ad-6b08-4130-9e33-3d4077112b8b.png)
+![image](https://user-images.githubusercontent.com/38482259/128817136-e5ea3b8f-1ea2-435c-abd0-7a2e7e5a29cb.png)
 
 
 ## 用法
-1. 入口地址为：https://21wang12.github.io/zzugo/go.html
+1. 入口地址为：https://21wang12.github.io/zzugo/go-alpha.html
 2. 或保存下列二维码进行扫描
 
 ![郑州大学通行码](https://user-images.githubusercontent.com/38482259/112741236-7e41e680-8fb6-11eb-8552-b5c3f9b29cab.png)
