@@ -179,9 +179,10 @@
 			reader.readAsDataURL(file);
 		}
 		
-		a=null;
-		b=null;
-		c=null;
+		let a=null;
+		let b=null;
+		let c=null;
+		
 		
 		function generate(){
 			start = true;	//star henceTimer
@@ -195,12 +196,7 @@
 			localStorage.setItem('f_name', a);
 			localStorage.setItem('f_collage', b);
 			localStorage.setItem('f_door', c);
-			if(document.querySelector("[value='back2skuN']").checked){
-				localStorage.setItem('back2skuY', "true");
-				document.querySelector("span[id='tipNoRecord']").style.display="none";
-			}else{
-				localStorage.setItem('back2skuY', "false");
-			}
+			
 			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;"+ b+"　"+a;
 			let m_select = document.querySelector("select");
 			let idx = m_select.selectedIndex;
