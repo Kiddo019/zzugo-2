@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<meta charset="utf-8">
+
 		<meta name="viewport"
 			content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no">
 		<meta http-equiv="pragma" content="no-cache">
@@ -208,12 +208,12 @@
 		
 		function generate_in(){
 			generate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">出口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">入口</span>';
 			document.getElementById("qrcode_image").style.border="10px solid green"
 		}
 		function generate_out(){
 			generate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">入口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">出口</span>';
 		}
 		
 		function localstroageGenerate(){
@@ -236,13 +236,13 @@
 		
 		function last_time_in(){
 			localstroageGenerate();
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">出口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 3px solid green;border-bottom: 3px solid green;">入口</span>';
 			document.getElementById("qrcode_image").style.border="10px solid green"
 		}
 		
 		function last_time_out(){
 			localstroageGenerate()
-			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">入口</span>';
+			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 3px solid #C526CE;border-bottom: 3px solid #C526CE;">出口</span>';
 			
 		}
 		
