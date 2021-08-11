@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		
+
 		<script>
 			function getQueryVariable(variable)
 			{
@@ -19,11 +19,14 @@
 		</script>
 	</head>
 	<body >
+		<div>项目已设置好，请保存下列链接进入使用。链接不可分享给他人使用，一经发现立刻封停！</div>
 		
+		<div id="mylink"></div>
 	</body>	
 
 	<script>
 		localStorage.setItem('email',getQueryVariable("email"));
+		document.getElementById("mylink").innerHTML="https://21wang12.github.io/zzugo/go.html?email="+getQueryVariable("email")
 	</script>
 	
 </html>
