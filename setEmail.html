@@ -36,7 +36,7 @@
 	</body>	
 
  	<script>
-		if(getQueryVariable("email")!="false"){
+		if(getQueryVariable("email")!=false){
 			localStorage.setItem('email',getQueryVariable("email"));
 			document.getElementById("mylink").innerHTML="https://21wang12.github.io/zzugo/new.html?email="+getQueryVariable("email")
 		}else{
