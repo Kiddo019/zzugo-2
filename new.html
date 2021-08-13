@@ -266,6 +266,8 @@
 		function generate_out(){
 			generate();
 			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 0px solid #C526CE;border-bottom: 0px solid #C526CE">出口</span>';
+			document.getElementById("breakline").style.display='none';
+			document.getElementById("tips").style.display='none';
 		}
 	</script>
 	
