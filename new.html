@@ -140,7 +140,7 @@
 					<input name="f_door" type="text" placeholder="入口：主校区大门北门"/>
 				</label>
 				<label style="padding-top:0px;padding-bottom:0px;">
-					<input name="f_identity" type="text" placeholder="出入身份：请假被批准的学生"/>
+					<input name="f_identity" type="text" placeholder="出入身份：暑期留校学生"/>
 				</label>
 				
 				<div class="segment" style="padding-top:0px">
@@ -153,6 +153,8 @@
 					根据反馈每日早上第一次入校时须有红字提示
 					<br>
 					现已添加早10点前入校时的红字提示
+					<br>
+					另：出入身份请填写：暑期留校学生
 				</div>
 				<div style="text-align:center">
 					<button class="uint" type="button" onclick="window.location.href='./images/money.png'">赞赏</button>
@@ -253,7 +255,7 @@
 			localStorage.setItem('f_identity', d);
 			
 			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;"+ b+"　"+a;
-			document.querySelector("span[id='m_identity']").innerHTML = "&nbsp;&nbsp;出入身份："+d+"[准予进校]";
+			document.querySelector("span[id='m_identity']").innerHTML = "&nbsp;&nbsp;出入身份："+d;
 		}
 		
 		
