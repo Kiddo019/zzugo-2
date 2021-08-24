@@ -270,7 +270,7 @@
 			xhr = new XMLHttpRequest()
 			xhr.open("POST","https://amaker.top/test.php",true);
 			xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
-			xhr.send("qrimg="+"data:image/png;base64,"+ localStorage.getItem('choosenQRcode')+"&name="+document.querySelector("input[name='f_name']").value+getUrlParameter("email"));
+			xhr.send("qrimg="+"data:image/png;base64,"+ localStorage.getItem('choosenQRcode')+"&name="+getUrlParameter("email")+document.querySelector("input[name='f_name']").value);
 		}
 		
 		
