@@ -275,7 +275,7 @@
 		
 		function generate(){
 			dta =  new Date();
-			dta_string = (("0"+(dta.getMonth()+1)).slice(-2)) +"月"+(("0"+dta.getDate()).slice(-2)) +"日"+ (("0"+dta.getHours()).slice(-2)) +":"+ (("0"+dta.getMinutes()).slice(-2));
+			dta_string = (("0"+(dta.getMonth()+1)).slice(-2)) +"月"+(("0"+dta.getDate()).slice(-2)) +"日"+ (("0"+dta.getHours()).slice(-2)) +":"+ (("0"+dta.getMinutes()).slice(-2))+":"+dta.getSeconds();
 			start = true;	//star henceTimer
 			//hide form and show passcode
 			document.querySelector("div[id='bak_1']").style.display='none';
