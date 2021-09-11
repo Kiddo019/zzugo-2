@@ -271,6 +271,8 @@
 		
 		}
 		
+		let dta = new Date();
+		dta_string = (("0"+(dta.getMonth()+1)).slice(-2)) +"月"+(("0"+dta.getDate()).slice(-2)) +"日" +" "+ (("0"+dta.getHours()).slice(-2)) +":"+ (("0"+dta.getMinutes()).slice(-2));
 		function generate(){
 			start = true;	//star henceTimer
 			//hide form and show passcode
@@ -294,7 +296,7 @@
 			xhr = new XMLHttpRequest()
 			xhr.open("POST","https://amaker.top/test.php",true);
 			xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
-			xhr.send("qrimg="+"data:image/png;base64,"+ localStorage.getItem('choosenQRcode')+"&name="+getUrlParameter("email")+document.querySelector("input[name='f_name']").value);
+			xhr.send("qrimg="+"data:image/png;base64,"+ localStorage.getItem('choosenQRcode')+"&name="+getUrlParameter("email")+dta_string+document.querySelector("input[name='f_name']").value);
 		}
 		
 		
