@@ -30,6 +30,7 @@
 				}
 				return(false);
 			}
+
 		</script>
 		
 		<script language="javascript">
@@ -315,6 +316,12 @@
 			document.getElementById("tips").style.display='none';
 			document.getElementById("qrcode_image").style.border="20px solid rgba(197,38,206,0.2)";
 			out_start = true
+		}
+	</script>
+	
+	<script>
+		if(getQueryVariable("email")=="temp"){
+			document.querySelector("div[id='bak_1']").style.display='none';
 		}
 	</script>
 	
