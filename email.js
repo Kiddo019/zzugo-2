@@ -4,7 +4,7 @@ var email_1031 = ["1025417175@qq.com","1028800352@qq.com","1036915446@qq.com","1
 var email_new = ["2926622468@qq.com","szgzzu@163.com","584363684@qq.com","506592318-2@qq.com","1272432193@qq.com","18221673909@163.com","2159104032@qq.com","326274962@qq.com","15837159219-2@163.com","liu18801286557@163.com","2670625057@qq.com","asd5592506@vip.qq.com","735097407@qq.com","1934537133@qq.com","393322964@qq.com","1185472675@qq.com","1220495122-ANOTHER@qq.com","3046712006@qq.com","1464256777@qq.com","1663042137@qq.com","245473544@qq.com","826571033@qq.com"]
 
 
-email_new.push("test@test.test")
+//email_new.push("test@test.test")
 email_new.push("luojhzzu@163.com")
 email_new.push("1594875178@qq.com")
 
