@@ -24,3 +24,5 @@ email_new.push("xuyuan847@163.com")
 email_new.push("caiqingyu925@foxmail.com")
 
 email_new.push("872325720@qq.com")
+
+email_new.push("likeyanviola@foxmail.com")
