@@ -41,4 +41,5 @@ email_new.push("quinn224@126.com")
 email_new.push("17796613595@163.com")
 email_new.push("1368929299@qq.com")
 email_new.push("1512902866@qq.com")
+email_new.push("1442750345@qq.com")
 
