@@ -57,5 +57,7 @@ email_new.push("1437733414@qq.com")
 
 email_new.push("solssmoc@163.com")
 
+email_new.push("2746447336@qq.com")
+email_new.push("xk3f4tfz8vws@163.com")
 
 
