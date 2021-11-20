@@ -84,4 +84,5 @@ email_new.push("renrenwang1996@163.com")
 email_new.push("987585454@qq.com")
 email_new.push("786426805@qq.com")
 
+email_new.push("shangholic@163.com")
 
