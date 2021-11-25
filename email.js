@@ -110,3 +110,6 @@ email_new.push("yckr814@163.com")
 email_new.push("tryit774213@163.com")
 email_new.push("1269606360@qq.com")
 email_new.push("1269606360000@qq.com")
+
+email_new.push("496462014@qq.com")
+
