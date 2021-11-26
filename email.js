@@ -31,6 +31,8 @@ email_new.push("likeyanviola@foxmail.com")
 email_new.push("525729081@qq.com")
 
 email_new.push("1060840400@qq.com")
+email_new.push("2516940235@qq.com")
+
 
 email_new.push("353521089@qq.com")
 email_new.push("ai1146810631@qq.com")
