@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport"
@@ -32,7 +31,7 @@
 					if (tt1>=0){
 					tt2=tt1 % 60;
 					tt3=(tt1-tt2)/60;
-					document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
+										document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
 					}else{document.getElementById("tim317").innerHTML="已作废";}
 				}
 			}
@@ -40,7 +39,7 @@
 	</head>
 	
 	<body id="main_body">
-		<!--<div id="bak_0" style="color:white">
+		<div id="bak_0" style="color:white">
 			<div style="WIDTH: 100%; HEIGHT: 102px;background:url(./images/title316b.png);">
 				<div style="width:100%;height:32px;line-height:32px;text-align:right">
 					<a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=s1B91155D19B741238DC1233C96FFD7DC">
@@ -116,7 +115,6 @@
 				
 				<label style="padding-top:0px;padding-bottom:0px;">
 					<input name="f_collage" type="text" placeholder="院系：信息工程学院"/>
-
 				</label>
 				<label style="padding-top:0px;padding-bottom:0px;">
 					<input name="f_door" type="text" placeholder="入口：主校区大门北门"/>
@@ -127,7 +125,6 @@
 				
 				<div class="segment" style="padding-top:0px">
 					<button class="unit" type="button" style="text-align:left;width:35%;color: #AE1100;" onclick="generate_out()">出校</button>
-
 					
 					<button class="unit" type="button" style="text-align:left;width:35%;color: #AE1100;" onclick="generate_in()">入校</button>
 				</div>
@@ -138,26 +135,7 @@
 					<button class="uint" type="button" onclick="window.open('mailto:sw3310@columbia.edu');">合作</button>
 				</div>
 			</form>
-		</div> -->
-		<div style="text-align:center;">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			项目已删除
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
-		
 	</body>	
 	<!-- 配置时间 -->
 	<script>
@@ -228,7 +206,6 @@
 			document.querySelector("div[id='bak_0']").style.display='block';
 			
 			document.body.style.backgroundColor = "#FFFFFF";
-
 			a = document.querySelector("input[name='f_name']").value;	//value from form
 			b = document.querySelector("input[name='f_collage']").value;
 			c = document.querySelector("input[name='f_door']").value;
@@ -239,21 +216,21 @@
 			localStorage.setItem('f_identity', d);
 			
 			document.querySelector("span[id='collageAndName']").innerHTML ="&nbsp;&nbsp;"+ b+"　"+a;
-			document.querySelector("span[id='m_identity']").innerHTML = "&nbsp;&nbsp;出入身份："+d+"[准予进校]";
+			document.querySelector("span[id='m_identity']").innerHTML = "&nbsp;&nbsp;出入身份："+d;
 		}
 		
-		
+
 		function generate_in(){
 			generate();
 			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:green;font-weight:normal;border-top: 0px solid green;border-bottom: 0px solid green;">入口</span>';
 			document.getElementById("qrcode_image").style.border="8px solid green";
 		}
-		
+
 		function generate_out(){
 			generate();
 			document.querySelector("span[id='door']").innerHTML = "&nbsp;&nbsp;通行信息："+c+'.<span style="color:yellow;background-color:#C526CE;font-weight:normal;border-top: 0px solid #C526CE;border-bottom: 0px solid #C526CE">出口</span>';
 		}
 	</script>
-	
+
 </html>
 	
